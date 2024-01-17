@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Captioning</title>
+    <style>
+        #image-preview {
+            max-width: 400px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Captioning</h1>
+    <input type="file" id="image-input" accept="image/*">
+    <button id="caption-btn">Generate Caption</button>
+    <br>
+    <img id="image-preview" src="" alt="Image Preview">
+    <p id="caption-text"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
